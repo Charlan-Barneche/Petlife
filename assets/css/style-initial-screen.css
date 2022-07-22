@@ -78,7 +78,7 @@ body {
 .initial-screen main {
     z-index: 99999;
     width: 100%;
-    height: 85%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,6 +107,13 @@ body {
     color: #fff;
     font-weight: 600;
 }
+
+
+[data-anime] .scroll-scren {
+    transform: translateY(-700px) translateX(0);
+}
+
+
 
 .scroll-scren{
     transform: translateY(-700px) translateX(0);
