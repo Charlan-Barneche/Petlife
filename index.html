@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style-initial-screen.css">
-    <link rel="stylesheet" href="./assets/css/style-login.css">  
+    <link rel="stylesheet" href="./assets/css/style-login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,7 +36,7 @@
 
     <!-- FIM TELA INICIAL -->
 
-    <!-- LOGIN -->
+    <!-- REGISTER OR LOGIN -->
     <div class="btns-register-entry" data-aos="zoom-out-down">
         <h1>Pet Life</h1>
         <div class="buttons-imgs">
@@ -45,8 +45,8 @@
                 alt="imagem de cao segurando a coleira" srcset="">
 
             <span id="entry" class="btn">
-                    <p>Entrar</p>
-                </span>
+                <p>Entrar</p>
+            </span>
             <span id="create" class="btn">
                 <p>Criar Conta</p>
             </span>
@@ -58,7 +58,49 @@
 
     </div>
 
+    <!-- FIM REGISTER OR LOGIN -->
+
+    <!-- LOGIN -->
+    <div class="box-login">
+        <div class="inputs">
+            <form>
+                <span class="form-floating">
+                    <input type="email" name="email" id="email" placeholder=" " class="form-control"
+                        autocomplete="off" />
+                    <label for="email" class="label" id="label"><span>E-mail</span></label>
+                </span>
+
+                <span class="form-floating">
+                    <input type="password" name="password" id="password" placeholder=" " class="form-control"
+                        autocomplete="off" />
+                    <label for="password" class="label" id="label"><span>Senha</span></label>
+                </span>
+
+                <button class="btn-login" id="btn-login">Entrar</button>
+                <span class="remember-box">
+                    <input type="checkbox" name="lembrar-de-mim" id="lembrar-de-mim" />
+                    <label for="lembrar-de-mim">Lembrar de mim</label>
+                </span>
+            </form>
+        </div>
+
+        <div class="redes-sociais">
+            <div class="network-box">
+                <p>Entrar com redes sociais:</p>
+                <div class="buttons-network">
+                    <i class="fa-brands fa-facebook-f"></i><!-- icon facebook -->
+                    <i class="fa-brands fa-instagram"></i><!-- icon instagram -->
+                </div>
+            </div>
+            <button>Voltar</button>
+        </div>
+
+
+    </div>
+
     <!-- FIM LOGIN -->
+
+
 </body>
 <script src="./assets/js/script.js"></script>
 

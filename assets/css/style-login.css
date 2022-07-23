@@ -2,6 +2,8 @@
 
 @media screen and (max-width: 800px) {
 
+    /*  REGISTER OR LOGIN  */
+
 
     .btns-register-entry {
         /* background: radial-gradient(circle at top,  rgb(99, 22, 22) 25%,rgb(99, 22, 22) 47%,rgb(99, 22, 22) 40%,rgb(223, 171, 2) 47%,rgb(223, 171, 2) 48%);
@@ -22,7 +24,7 @@
     .btns-register-entry h1 {
         position: relative;
         top: 0%;
-        z-index: 8;
+        z-index: 1;
         font-size: 4rem;
         font-family: 'Pacifico', cursive;
         color: rgb(103, 15, 15);
@@ -37,7 +39,7 @@
 
     .buttons-imgs {
         width: 100%;
-        z-index: 9;
+        z-index: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -87,9 +89,204 @@
         color: #000;
     }
 
+    /* FIM REGISTER OR LOGIN */
+
+    /* LOGIN */
+
+    .box-login {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(103, 15, 15);
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+        gap: 5vh;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6vh;
+    }
+
+    .inputs form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inputs form .form-control{
+        background: none;
+        border: none;
+        border-bottom: 2px #fff solid;
+        outline: none;
+        box-shadow: none;
+        width: 32vh;
+        height: 40px;
+        transition: all .5s;
+        border-radius: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2rem;
+        
+    }
+
+    .inputs form .form-control:focus{
+        border-bottom: 2px rgb(223, 171, 2) solid;
+    }
+    
+    .inputs .form-floating {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+    }
+
+
+    .inputs .form-floating .label {
+        position: relative;
+        top: -45%;
+        left: 5px;
+        color: #fff;
+        font-size: 1.2rem;
+        pointer-events: none;
+        transition: all .5s;
+    
+    }
+
+
+    .form-control:focus + .label,
+    .form-control:not(:placeholder-shown) + .label{
+        top: -90%;
+        left: -25px;
+        transform:scale(0.7);
+        opacity: 50%;
+
+
+    }
+
+
+    .inputs .btn-login {
+        margin-top: 30px;
+        width: 16rem;
+        height: 3rem;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -1px 3px 0px 1px rgba(0, 0, 0, 0.36);
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+
+
+    /* lembrar-de-mim */
+
+    .inputs .remember-box {
+        margin: 15px 0;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .inputs .remember-box #lembrar-de-mim{
+        -webkit-appearance: none;
+        background-color: #fafafa;
+        border: 2px solid rgb(223, 171, 2);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 8px;
+        border-radius: 3px;
+        display: inline-block;
+        position: relative;
+        transition: all;
+        transition-duration: .5s;
+    }
+
+    .inputs .remember-box #lembrar-de-mim:checked{
+        border: 2px solid #fff;
+        background-color:rgb(223, 171, 2); 
+    }
+
+    /* fim lembrar-de-mim */
+
+    /* FIM LOGIN */
+
+
+
+    /* REDES SOCIAIS */
+
+    .redes-sociais{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .network-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 15vh;
+    }
+
+    .buttons-network{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .fa-facebook-f {
+        font-size: 25px;
+        color: #fff;
+        border: 4px #fff solid;
+        padding: 8px 13px;
+        border-radius: 50%;
+    }
+
+    .fa-instagram{
+        font-size: 50px;
+        color: #fff;
+
+    }
+
+    .redes-sociais button{
+        width: 10rem;
+        height: 2.3rem;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: -1px 3px 0px 1px rgba(0, 0, 0, 0.36);
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    /* FIM REDES SOCIAIS */
+
+
+
+
     /* DYNAMIC CLASS JS */
     .btn-move {
-        animation: btn-move 5s !important;
+        animation: btn-move 5s, btn-cor 8s !important;
         animation-iteration-count: infinite !important;
         animation-timing-function: cubic-bezier(.61, -0.35, .03, 1.42) !important;
         animation-delay: 8s !important;
@@ -97,9 +294,16 @@
 
 
     .btn-cor {
-        animation: btn-cor 8s;
         animation-iteration-count: infinite;
         animation-delay: 6s;
+    }
+
+
+    .hidden-screen {
+        height: 0;
+        margin: 0;
+        padding: 0;
+
     }
 
     /* FIM DYNAMIC CLASS JS */
