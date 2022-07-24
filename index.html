@@ -37,19 +37,20 @@
     <!-- FIM TELA INICIAL -->
 
     <!-- REGISTER OR LOGIN -->
-    <div class="btns-register-entry" id="register-entry">
+    <div class="btns-register-entry position-fixed" id="register-entry">
         <h1>Pet Life</h1>
-        <div class="buttons-imgs">
+        <div class="buttons-imgs" id="buttons-imgs">
 
             <img src="./assets/imgs/kisspng-rescue-dog-animal-shelter-mongrel-dog-behavior-5b263053213325.997850751529229395136.png"
                 alt="imagem de cao segurando a coleira" srcset="">
 
-            <span id="entry" class="btn">
-                <a href="./login.html"><p>Entrar</p></a>
-            </span>
-            <span id="create" class="btn">
-                <p>Criar Conta</p>
-            </span>
+            <a href="#box-login"><span id="entry" class="btn">
+                <p>Entrar</p>
+            </span></a>
+            
+            <a href="#"></a><span id="create" class="btn">
+               <p>Criar Conta</p>
+            </span></a>
             <span class="change-password">
                 <a href="#">Esqueci a senha</a>
                 <p><i class="fa-solid fa-lock"></i></p>
@@ -60,6 +61,45 @@
 
     <!-- FIM REGISTER OR LOGIN -->
 
+     <!-- LOGIN -->
+     <div class="hidden opacity0 position-relative" id="box-login">
+        <div class="inputs opacity0" id="inpus-login">
+            <form>
+                <span class="form-floating">
+                    <input type="email" name="email" id="email" placeholder=" " class="form-control"
+                        autocomplete="off" />
+                    <label for="email" class="label" id="label"><span>E-mail</span></label>
+                </span>
+
+                <span class="form-floating">
+                    <input type="password" name="password" id="password" placeholder=" " class="form-control"
+                        autocomplete="off" />
+                    <label for="password" class="label" id="label"><span>Senha</span></label>
+                </span>
+
+                <button class="btn-login" id="btn-login">Entrar</button>
+                <span class="remember-box">
+                    <input type="checkbox" name="lembrar-de-mim" id="lembrar-de-mim" />
+                    <label for="lembrar-de-mim">Lembrar de mim</label>
+                </span>
+            </form>
+        </div>
+
+        <div class="redes-sociais opacity0" id="redes-sociais">
+            <div class="network-box">
+                <p>Entrar com redes sociais:</p>
+                <div class="buttons-network">
+                    <i class="fa-brands fa-facebook-f"></i> <!-- icon facebook -->
+                    <i class="fa-brands fa-instagram"></i> <!-- icon instagram -->
+                </div>
+            </div>
+            <a href="#register-entry"><span id="return" class="return-btn">
+                <p>Voltar</p>
+            </span></a>
+
+        </div>
+    <!-- FIM LOGIN -->
+
 
     </div>
 
@@ -68,5 +108,6 @@
 
 </body>
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/return.js"></script>
 
 </html>

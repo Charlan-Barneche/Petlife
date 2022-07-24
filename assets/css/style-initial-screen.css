@@ -177,6 +177,110 @@ body {
 
 }
 
+  /*  REGISTER OR LOGIN  */
+
+  body{
+    display: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.btns-register-entry {
+    position: fixed;
+    top: 160vh;
+    left: 0;
+    padding: 20%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(223, 171, 2);
+    transition: all .3s;
+    transition-timing-function:cubic-bezier(.88,-0.01,.19,.96);
+
+}
+
+
+.btns-register-entry h1 {
+    position: relative;
+    top: 0%;
+    z-index: 1;
+    font-size: 4rem;
+    font-family: 'Pacifico', cursive;
+    color: rgb(103, 15, 15);
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+
+}
+
+.buttons-imgs {
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns-register-entry .buttons-imgs img {
+    width: 75%;
+}
+
+.btns-register-entry .buttons-imgs .btn {
+    width: 16rem;
+    height: 4rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 3px 0px 1px rgba(0, 0, 0, 0.36);
+
+}
+
+
+
+
+
+
+#entry {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#create {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.change-password {
+    position: relative;
+    bottom: -1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+/* FIM REGISTER OR LOGIN */
+
 /* ANIMATION INITIAL SCREEN*/
 
 @keyframes bar {
