@@ -6,9 +6,9 @@
 
 
     .btns-register-entry {
-        /* background: radial-gradient(circle at top,  rgb(99, 22, 22) 25%,rgb(99, 22, 22) 47%,rgb(99, 22, 22) 40%,rgb(223, 171, 2) 47%,rgb(223, 171, 2) 48%);
-        background-position:0 -300px;
-        background-size: 100% 100%; */
+        position: absolute;
+        top: 700px;
+        left: 0;
         padding: 20%;
         width: 100%;
         height: 100vh;
@@ -17,6 +17,8 @@
         align-items: center;
         justify-content: flex-end;
         background-color: rgb(223, 171, 2);
+        transition: all 1s;
+        transition-timing-function:cubic-bezier(.88,-0.01,.19,.96);
 
     }
 
@@ -35,6 +37,7 @@
         justify-content: center;
         width: 100%;
         height: 200px;
+
     }
 
     .buttons-imgs {
@@ -93,10 +96,8 @@
 
     /* LOGIN */
 
-    .box-login {
-        z-index: 3;
-        position: absolute;
-        top: 0;
+    .box-login-visible {
+        z-index: 10;
         width: 100%;
         height: 100vh;
         background-color: rgb(103, 15, 15);
@@ -105,6 +106,8 @@
         flex-direction: column;
         align-items:center;
         justify-content: flex-start;
+        transition: all 1s;
+
     }
 
     .inputs {
@@ -291,26 +294,41 @@
 
 
     /* DYNAMIC CLASS JS */
-    .btn-move {
-        animation: btn-move 5s, btn-cor 8s !important;
-        animation-iteration-count: infinite !important;
-        animation-timing-function: cubic-bezier(.61, -0.35, .03, 1.42) !important;
-        animation-delay: 8s !important;
-    }
 
-
-    .btn-cor {
+    /* usuario ocioso */
+    .btn-move-cor {
+        animation: btn-move 6s, btn-cor 3s;
         animation-iteration-count: infinite;
-        animation-delay: 6s;
+        animation-timing-function: cubic-bezier(.61, -0.35, .03, 1.42);
+        animation-delay: 8s;
     }
 
 
-    .hidden-screen {
+    /* fim usuario ocioso */
+
+    /* tela inicial */
+    .hidden {
+        position: absolute;
+        top: 0;
+        right: 0;
         height: 0;
         margin: 0;
         padding: 0;
+        visibility: hidden;
+    }
+
+    .up{
+        transform: translateY(-700px);
 
     }
+
+    .down{
+        transform: translateY(1600px) translateX(-140px);
+        transition: all 1s;
+    }
+
+    /* fim tela inicial */
+
 
     /* FIM DYNAMIC CLASS JS */
 
