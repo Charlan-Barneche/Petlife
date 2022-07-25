@@ -52,24 +52,23 @@
             const INPUTS_LOGIN = document.getElementById ("inpus-login");
             const REDES_SOCIAIS = document.getElementById ("redes-sociais");
             const BTN_IMGS = document.getElementById("buttons-imgs");
-            LOGIN.classList = ("indexnegativo box-login-visible");
+            LOGIN.classList = ("box-login-visible .position-fixed opacity0");
 
 
             setTimeout(function loginhidden () {
-                LOGIN.classList = ("box-login-visible .position-fixed");
                 REGISTER_ENTRY.classList = ("btns-register-entry position-relative up");
             },100)
 
             setTimeout(function loginVisible () {
-                LOGIN.classList = ("box-login-visible .position-fixed moveup");
-                REGISTER_ENTRY.classList = ("btns-register-entry position-relative up");
-            },350)
+                LOGIN.classList = ("box-login-visible .position-fixed up opacity0");
+            },150)
 
 
             setTimeout (function animinputs (){
+                LOGIN.classList = ("box-login-visible .position-fixed up opacity0-100");
                 INPUTS_LOGIN.classList = ("inputs opacity0-100");
                 REDES_SOCIAIS.classList = ("redes-sociais opacity0-100");
-                BTN_IMGS.classList = ("hidden opacity100-0");
+                REGISTER_ENTRY.classList = ("btns-register-entry position-relative up opacity100-0");
             },1000)
             
 

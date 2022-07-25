@@ -17,7 +17,7 @@ RETURN.addEventListener("click" , clickreturn)
             
             setTimeout(function logindown () {
                 LOGIN.classList = ("box-login-visible position-relative");
-                REGISTER_ENTRY.classList = ("btns-register-entry position-fixed moveup");
+                REGISTER_ENTRY.classList = ("btns-register-entry position-fixed up opacity0-100");
                 BTN_IMGS.classList = ("buttons-imgs opacity0-100");
 
             },750)       

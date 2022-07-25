@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 
@@ -38,6 +39,14 @@ body {
     transform: rotate(90deg);
     font-size: 5rem;
     
+}
+
+.btns-register-entry{
+    display: none;
+}
+
+.hidden{
+    display: none;
 }
 
 /* MOBILE */
@@ -241,7 +250,6 @@ html {
     z-index: 0;
     height: 180px;
     color: rgb(103, 15, 15);
-    margin-bottom: 10%;
 }
 
 
@@ -257,6 +265,7 @@ html {
 
 .btns-register-entry .buttons-imgs img {
     width: 75%;
+    margin-top: 10%;
 }
 
 .btns-register-entry .buttons-imgs .btn {
