@@ -12,16 +12,19 @@ RETURN.addEventListener("click" , clickreturn)
             const REGISTER_ENTRY = document.getElementById ("register-entry");
             INPUTS_LOGIN.classList = ("inputs opacity100-0");
             REDES_SOCIAIS.classList = ("redes-sociais opacity100-0");
+            
 
             
             setTimeout(function logindown () {
-                REGISTER_ENTRY.classList = ("btns-register-entry position-fixed movedown");
                 LOGIN.classList = ("box-login-visible position-relative");
+                REGISTER_ENTRY.classList = ("btns-register-entry position-fixed moveup");
                 BTN_IMGS.classList = ("buttons-imgs opacity0-100");
 
             },750)       
             
-            
+            setTimeout(function logindown () {
+                LOGIN.classList = ("hidden opacity100-0");
+            },800)
 
         }
 

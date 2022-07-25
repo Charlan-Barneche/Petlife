@@ -72,9 +72,6 @@
                 BTN_IMGS.classList = ("hidden opacity100-0");
             },1000)
             
-            // setTimeout(function hidden(){             
-            //     REGISTER_ENTRY.classList = ("moveup hidden");
-            // },1500);
 
             
 
