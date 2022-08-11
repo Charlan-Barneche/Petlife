@@ -1,5 +1,5 @@
 <body >
-    <h1 align = 'center'><strong>Menu lateral</strong></h1>
+    <h1 align = 'center'><strong>Tela de login mobile</strong></h1>
     <p align = 'center'>Fiz este projeto para treinar as minhas habilidades em Css, js</p>
     <p align = 'center'>Se trata de um uma tela de login de um site voltado para os pets.</p>
     <p>Para o projeto usei as seguintes tecnologias:</p>
